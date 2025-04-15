@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+
+  --font-sans: "Inter, system-ui, sans-serif";
+
+  --radius: 0.5rem;
+
+  --color-background: #ffffff;
+  --color-foreground: #09090b;
+
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #6f7072;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #09090b;
+
+  --color-border: #e4e4e7;
+  --color-input: #e4e4e7;
+
+  --card: #ffffff;
+  --card-foreground: #09090b;
+
+  --color-primary: #3b6dff; /* Bleu indigo - Couleur principale */
+  --color-primary-foreground: #fafafa;
+
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #18181b;
+
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-ring: #3b6dff;
+
+  --color-switch: #c0c0c0;
+  --color-switch-foreground: #ffffff;
+
+  
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+@layer base {
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+color-scheme: light dark;
+}
+  .dark {
+    --background: #09090b;
+    --foreground: #fafafa;
+
+    --muted: #27272a;
+    --muted-foreground: #a1a1aa;
+
+    --popover: #09090b;
+    --popover-foreground: #fafafa;
+
+    --border: #27272a;
+    --input: #27272a;
+
+    --card: #09090b;
+    --card-foreground: #fafafa;
+
+    --primary: #3b6dff;
+    --primary-foreground: #fafafa;
+
+    --secondary: #27272a;
+    --secondary-foreground: #fafafa;
+
+    --accent: #27272a;
+    --accent-foreground: #fafafa;
+
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+
+    --ring: #3b6dff;
+
+    --switch: #44403c;
+    --switch-foreground: #fafafa;
+  }
 }
