@@ -38,7 +38,7 @@ export default async function ShareProfilePage() {
       <div>
         <h1 className="text-2xl font-bold">Partager mon profil</h1>
         <p className="text-muted-foreground">
-          {"Partagez votre profil MaTaille avec vos proches pour qu'ils puissent voir vos tailles."}
+          {"Partagez votre profil Sayz avec vos proches pour qu'ils puissent voir vos tailles."}
         </p>
       </div>
 

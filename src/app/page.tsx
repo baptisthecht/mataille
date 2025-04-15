@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex h-20 items-center justify-between py-6">
           <div className="flex items-center gap-2">
             <MeasuringTapeIcon className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">MaTaille</span>
+            <span className="text-xl font-bold">Sayz</span>
           </div>
           <nav className="flex items-center gap-4">
             <Link href="/login">
@@ -35,7 +35,7 @@ export default function Home() {
               <span className="text-primary">mauvaise taille</span>
             </h1>
             <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-              MaTaille vous permet de partager facilement vos tailles de vêtements, 
+              Sayz vous permet de partager facilement vos tailles de vêtements, 
               chaussures et accessoires avec vos proches pour des cadeaux parfaitement ajustés.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
@@ -86,10 +86,10 @@ export default function Home() {
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center gap-2">
             <MeasuringTapeIcon className="h-6 w-6 text-primary" />
-            <span className="font-semibold">MaTaille</span>
+            <span className="font-semibold">Sayz</span>
           </div>
           <p className="text-center text-sm leading-loose text-muted-foreground">
-            © {new Date().getFullYear()} MaTaille. Tous droits réservés.
+            © {new Date().getFullYear()} Sayz. Tous droits réservés.
           </p>
           <div className="flex items-center space-x-4">
             <Link href="/privacy" className="text-sm text-muted-foreground underline-offset-4 hover:underline">

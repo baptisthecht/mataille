@@ -10,7 +10,7 @@ export default function RegisterPage() {
         <div className="flex flex-col items-center space-y-2 text-center">
           <Link href="/" className="flex items-center gap-2">
             <MeasuringTapeIcon className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">MaTaille</span>
+            <span className="text-xl font-bold">Sayz</span>
           </Link>
           
           <div className="mt-8">

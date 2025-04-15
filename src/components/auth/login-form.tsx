@@ -27,7 +27,7 @@ export function LoginForm() {
       <div className="space-y-2 text-center">
         <h1 className="text-3xl font-bold">Connexion</h1>
         <p className="text-gray-500">
-          Connectez-vous pour accéder à votre profil MaTaille
+          Connectez-vous pour accéder à votre profil Sayz
         </p>
       </div>
 

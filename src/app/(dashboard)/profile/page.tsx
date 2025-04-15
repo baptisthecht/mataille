@@ -95,7 +95,7 @@ export default async function ProfilePage() {
           Category.PANTS,
           Category.SHIRTS,
           Category.WATCHES,
-        ].includes(size.category)
+        ].includes(size.category as "SHOES" | "CLOTHING" | "PANTS" | "SHIRTS" | "WATCHES")
     ),
   };
 

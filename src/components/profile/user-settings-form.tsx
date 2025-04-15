@@ -147,7 +147,7 @@ export function UserSettingsForm({ user }: UserSettingsFormProps) {
                       <Input {...field} disabled={isLoading} />
                     </FormControl>
                     <FormDescription>
-                      {"Votre identifiant unique sur MaTaille. Il sera utilisé dans l'URL de votre profil."}
+                      {"Votre identifiant unique sur Sayz. Il sera utilisé dans l'URL de votre profil."}
                     </FormDescription>
                     <FormMessage />
                   </FormItem>

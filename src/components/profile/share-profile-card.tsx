@@ -41,8 +41,8 @@ export function ShareProfileCard({ user, profileUrl }: ShareProfileCardProps) {
     // Vérifier si l'API de partage Web est disponible
     if (navigator.share) {
       navigator.share({
-        title: `Tailles de ${user.name || "un utilisateur"} sur MaTaille`,
-        text: `Consultez mes tailles sur MaTaille pour ne plus offrir de cadeaux de la mauvaise taille !`,
+        title: `Tailles de ${user.name || "un utilisateur"} sur Sayz`,
+        text: `Consultez mes tailles sur Sayz pour ne plus offrir de cadeaux de la mauvaise taille !`,
         url: profileUrl,
       })
       .then(() => {

@@ -4,10 +4,16 @@ import { prisma } from "@/lib/db";
 import { Category } from "@prisma/client";
 import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
+type RouteContext = {
+  params: Promise<{
+    id: string;
+  }>;
+};
+
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  context: RouteContext
 ) {
   try {
     const session = await getServerSession(authOptions);
@@ -19,7 +25,7 @@ export async function GET(
       );
     }
 
-    const id = params.id;
+    const {id} = await context.params
     
     // Récupérer la taille avec les informations de marque
     const size = await prisma.size.findUnique({
@@ -66,7 +72,7 @@ export async function GET(
 
 export async function PUT(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  context: RouteContext
 ) {
   try {
     const session = await getServerSession(authOptions);
@@ -78,7 +84,7 @@ export async function PUT(
       );
     }
 
-    const id = params.id;
+    const {id} = await context.params
     const body = await req.json();
     const { category, brandId, value, notes } = body;
 
@@ -125,7 +131,7 @@ export async function PUT(
 
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  context: RouteContext
 ) {
   try {
     const session = await getServerSession(authOptions);
@@ -137,7 +143,7 @@ export async function DELETE(
       );
     }
 
-    const id = params.id;
+    const {id} = await context.params
 
     // Vérifier que l'utilisateur est le propriétaire de cette taille
     const size = await prisma.size.findUnique({

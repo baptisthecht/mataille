@@ -27,7 +27,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <MeasuringTapeIcon className="h-6 w-6 text-primary" />
-            <span className="text-lg font-bold">MaTaille</span>
+            <span className="text-lg font-bold">Sayz</span>
           </Link>
         </div>
 

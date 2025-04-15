@@ -8,13 +8,13 @@ import { Category } from "@prisma/client";
 import { notFound } from "next/navigation";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     username: string;
-  };
+  }>;
 }
 
 export default async function PublicProfilePage({ params }: PageProps) {
-  const { username } = params;
+  const { username } = await params;
 
   // Rechercher l'utilisateur par nom d'utilisateur ou lien personnalisé
   const user = await prisma.user.findFirst({
