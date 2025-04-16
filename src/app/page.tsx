@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="container z-40 bg-background">
+      <header className="px-4 container z-40 bg-background">
         <div className="flex h-20 items-center justify-between py-6">
           <div className="flex items-center gap-2">
             <MeasuringTapeIcon className="h-8 w-8 text-primary" />
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+        <section className="px-4 space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
           <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
             <Link
               href="/register"
